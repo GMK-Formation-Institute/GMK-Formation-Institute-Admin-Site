@@ -1,0 +1,11 @@
+<div class="ph"><div><small>Compte</small><h1>Journal <i>d'activité</i></h1><p>Toutes les actions faites dans l'espace de gestion : qui, quoi, quand, depuis quel appareil. Le journal ne peut pas être modifié ni effacé.</p></div><div class="row"><button class="btn" id="jexp">⤓ Exporter (Excel)</button></div></div>
+<div class="grid g4" style="margin-bottom:18px">
+<div class="card kpi"><span>Événements</span><b id="jk1">—</b><em>sur la période</em></div>
+<div class="card kpi"><span>Utilisateurs actifs</span><b id="jk2">—</b><em>hors actions automatiques</em></div>
+<button class="card kpi kbtn" data-quick="delete"><span>Suppressions / annulations</span><b id="jk3">—</b><em>Voir le détail →</em></button>
+<button class="card kpi kbtn alert" data-quick="sec"><span>Alertes de sécurité</span><b id="jk4">—</b><em class="down">Voir le détail →</em></button></div>
+<div class="card jfilt"><div class="seg" id="fp"><button data-p="1">Aujourd'hui</button><button data-p="7" class="on">7 jours</button><button data-p="30">30 jours</button></div>
+<select class="inp sm" id="fu"></select><select class="inp sm" id="fm"></select><select class="inp sm" id="ft"></select><input class="inp sm" id="fq" placeholder="Rechercher (nom, reçu, élève…)"></div>
+<div class="card" style="margin-top:14px"><div class="hd"><h3 id="jcount">—</h3><small class="muted">Cliquez sur une ligne marquée ▾ pour voir l'avant / après</small></div><ol class="jlist" id="jlist"></ol>
+<p class="hint" style="margin-top:16px">Conservation : 24 mois. Les journaux sont aussi copiés dans la sauvegarde quotidienne.</p></div>
+<script src="journal.js?v=2"></script>

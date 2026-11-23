@@ -1,0 +1,27 @@
+<div class="mbg" id="mform"><div class="modal">
+<div class="mh"><div><small>Nouveau membre</small><h3>Ajouter un membre</h3></div><button class="x" type="button" data-close>×</button></div>
+<form novalidate style="display:contents"><div class="mb">
+<div class="fph"><div class="ph" id="fph"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></div><div><b>Photo</b><small>Facultative · visible sur les plannings et le site</small><div class="row"><label class="btn sm">Choisir une photo<input type="file" id="fphi" accept="image/*" hidden></label><button type="button" class="lnkb" id="fphr" hidden>Retirer</button></div></div></div>
+<h5 class="fs">Identité</h5>
+<div class="g3f"><div class="fld"><label>Civilité</label><select class="inp" name="civ"><option>Mme</option><option>Mlle</option><option>M.</option><option>Dr</option></select></div>
+<div class="fld"><label>Prénoms *</label><input class="inp" name="prenom" autocomplete="off"></div>
+<div class="fld"><label>Nom *</label><input class="inp" name="nom" autocomplete="off"></div></div>
+<div class="g2f"><div class="fld"><label>Téléphone *</label><input class="inp" name="tel" inputmode="numeric" placeholder="07 00 00 00 00"><em class="er">10 chiffres requis</em></div>
+<div class="fld"><label>E-mail</label><input class="inp" name="email" type="email" placeholder="prenom@igmk-formation.net"><em class="er">Adresse e-mail invalide</em></div></div>
+<h5 class="fs">Poste & contrat</h5>
+<div class="g2f"><div class="fld"><label>Poste *</label><input class="inp" name="poste" placeholder="Ex. Formatrice Esthétique" list="postes"><datalist id="postes"><option>Formatrice Esthétique</option><option>Formateur Coiffure</option><option>Formatrice Maquillage</option><option>Formatrice Onglerie</option><option>Secrétaire — Accueil</option><option>Comptable</option></datalist><em class="er">Champ requis</em></div>
+<div class="fld"><label>Service</label><select class="inp" name="dep"><option>Formation</option><option>Direction</option><option>Administration</option></select></div></div>
+<div class="g2f"><div class="fld"><label>Contrat</label><select class="inp" name="contrat"><option>CDI</option><option>CDD</option><option>Vacataire</option><option>Stagiaire</option></select></div>
+<div class="fld"><label>Date d'entrée</label><input class="inp" name="entree" type="date"></div></div>
+<div class="fld" id="ftaux"><label>Taux horaire (FCFA)</label><input class="inp" name="taux" type="number" step="500" min="0"><small class="hint" style="margin-top:6px;display:block">Sert au calcul automatique des vacations du mois.</small></div>
+<div class="fld" id="fspecs"><label>Matières enseignées</label><div class="chk">
+<label><input type="checkbox" name="specs" value="Esthétique"><span>Esthétique</span></label><label><input type="checkbox" name="specs" value="Soins visage"><span>Soins visage</span></label><label><input type="checkbox" name="specs" value="Coiffure"><span>Coiffure</span></label><label><input type="checkbox" name="specs" value="Tresses"><span>Tresses</span></label><label><input type="checkbox" name="specs" value="Maquillage"><span>Maquillage</span></label><label><input type="checkbox" name="specs" value="Onglerie"><span>Onglerie</span></label><label><input type="checkbox" name="specs" value="Massage"><span>Massage</span></label><label><input type="checkbox" name="specs" value="Décoration"><span>Décoration</span></label></div></div>
+<h5 class="fs">Accès & statut</h5>
+<div class="tgl"><div><b>Accès à l'espace de gestion</b><small>Une invitation de connexion est envoyée par e-mail / WhatsApp</small></div><label class="sw"><input type="checkbox" name="acces"><i></i></label></div>
+<div class="fld" id="frole"><label>Rôle</label><select class="inp" name="role"><option>Secrétariat</option><option>Comptabilité</option><option>Pédagogie</option><option>Inscriptions</option><option>Administrateur</option></select><small class="hint" style="margin-top:6px;display:block">Les droits de chaque rôle se règlent dans Paramètres › Utilisateurs & accès.</small></div>
+<div class="tgl"><div><b>Membre actif</b><small>Un membre inactif n'apparaît plus dans les plannings</small></div><label class="sw"><input type="checkbox" name="actif" checked><i></i></label></div>
+</div>
+<div class="mf"><span class="hint" style="margin:0">* champs obligatoires</span><div class="row"><button type="button" class="btn" data-close>Annuler</button><button type="submit" class="btn p">Ajouter le membre</button></div></div>
+</form></div></div>
+<div class="mbg" id="cfm"></div><div class="toast" id="toast"></div>
+<script src="personnel.js?v=5"></script>
